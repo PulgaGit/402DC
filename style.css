@@ -15,6 +15,7 @@ header {
   color: #fff;
   width: 100%;
   box-sizing: border-box;
+  margin: 0;  /* Ensure it spans full width */
 }
 
 .logo {
@@ -52,7 +53,7 @@ header {
   transition: background-color 0.3s ease;
   text-align: center;
   width: 100%;
-  max-width: 300px;  /* Prevents buttons from stretching too wide */
+  max-width: 280px;  /* Reduced max-width for mobile */
 }
 
 .btn:hover {
@@ -87,8 +88,8 @@ footer {
 /* Responsiveness for small screens */
 @media (max-width: 600px) {
   .btn {
-    max-width: 80%;  /* Reduced max-width for better fitting */
-    padding: 0.65rem 1rem;  /* Reduced padding for a more compact look */
+    max-width: 70%;  /* Further reduced max-width for better fitting */
+    padding: 0.6rem 1rem;  /* Reduced padding for a more compact look */
     font-size: 0.95rem;
   }
   
@@ -105,11 +106,15 @@ footer {
   .widget {
     padding: 0.8rem;  /* Reduce padding for widgets on mobile */
   }
+
+  header {
+    padding: 2.5rem 1rem;  /* Increased padding for header for more space */
+  }
 }
 
 @media (max-width: 400px) {
   .btn {
-    max-width: 85%;  /* Even further reduction for very small screens */
+    max-width: 80%;  /* Even further reduction for very small screens */
     font-size: 0.9rem;
     padding: 0.55rem 1rem;  /* Further reduce padding */
   }
@@ -120,5 +125,9 @@ footer {
 
   .widget {
     padding: 0.7rem;  /* Further reduce padding for small screens */
+  }
+
+  header {
+    padding: 3rem 1rem;  /* More padding for header on very small screens */
   }
 }
