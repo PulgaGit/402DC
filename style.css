@@ -61,51 +61,48 @@ footer {
     width: 100%;
 }
 
-/* Responsive Adjustments for Mobile */
+/* Mobile Adjustments */
 @media (max-width: 600px) {
-    /* Button width adjustment for mobile */
+    /* Button Section */
     button {
-        width: 90%;  /* Increased width for smaller screens */
-        max-width: 350px;  /* Adjusted max-width */
-        padding: 12px 20px;  /* Slightly reduced padding */
-        font-size: 16px;  /* Adjust font size for smaller screens */
+        width: 85%;  /* Adjust button width for mobile */
+        max-width: 350px;  /* Make max width smaller for mobile screens */
+        padding: 12px 25px;  /* Slightly reduce button padding */
+        font-size: 16px;  /* Adjust font size */
     }
 
-    /* Header adjustments for mobile */
+    /* Header Section */
     header {
-        padding: 30px 10px;  /* Increased header padding for better mobile fit */
+        padding: 25px 10px;  /* Slightly reduce header padding */
     }
 
-    /* Center the text more effectively */
     h1 {
-        font-size: 28px;  /* Reduced font size for smaller screens */
+        font-size: 28px;  /* Smaller font size for better mobile fit */
     }
 
     p {
-        font-size: 18px;  /* Slightly smaller font size */
+        font-size: 18px;  /* Smaller text size for mobile */
     }
 }
 
-/* Additional Small Mobile Adjustments (for very small screens) */
+/* Extra Small Mobile Adjustments */
 @media (max-width: 400px) {
-    /* Button width adjustment for extra small mobile screens */
     button {
-        width: 95%;  /* Almost full width for extra small screens */
-        max-width: 320px;  /* Even smaller max-width for ultra-narrow screens */
-        padding: 10px 15px;  /* Further reduced padding */
-        font-size: 14px;  /* Smaller font size for tight spaces */
+        width: 95%;  /* Nearly full width for extra small screens */
+        max-width: 300px;  /* Even smaller max-width for tight screens */
+        font-size: 14px;  /* Smaller font size for very small screens */
+        padding: 10px 20px;  /* Further reduced padding */
     }
 
-    /* Header adjustments for very small screens */
     header {
-        padding: 25px 10px;  /* Slightly reduced padding */
+        padding: 20px 10px;  /* Further reduce header padding */
     }
 
     h1 {
-        font-size: 24px;  /* Even smaller font size for ultra-small screens */
+        font-size: 24px;  /* Even smaller header size */
     }
 
     p {
-        font-size: 16px;  /* Smaller font size */
+        font-size: 16px;  /* Smaller text size */
     }
 }
