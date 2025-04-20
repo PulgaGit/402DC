@@ -1,34 +1,32 @@
-/* style.css */
-
+/* Global Styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f7fa; /* Light subtle background */
+  background-color: #f5f7fa;
   color: #333;
   margin: 0;
   padding: 0;
 }
 
+/* Header */
 header {
   text-align: center;
   padding: 2rem 1rem;
-  background-color: #e8eef5;
-  border-bottom: 1px solid #ccc;
+  background-color: #0077cc;
+  color: white;
 }
 
-.logo {
+header .logo {
+  max-width: 120px;
   margin-bottom: 1rem;
 }
 
-.logo-img {
-  width: 120px;
-  height: auto;
-}
-
+/* Subtitle */
 .subtitle {
-  font-size: 1.2rem;
-  color: #666;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
 }
 
+/* Buttons */
 .button-container {
   display: flex;
   flex-direction: column;
@@ -40,43 +38,26 @@ header {
 }
 
 .btn {
-  display: inline-block;
-  background-color: #0077cc;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  display: block;
   width: 100%;
   text-align: center;
+  padding: 0.75rem 1.5rem;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
 .btn:hover {
   background-color: #005fa3;
 }
 
-.widget-container {
-  max-width: 500px;
-  margin: 2rem auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 0 1rem;
-}
-
-.widget {
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
+/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #e8eef5;
-  color: #555;
+  background-color: #e0e0e0;
   font-size: 0.9rem;
 }
