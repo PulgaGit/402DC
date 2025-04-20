@@ -1,6 +1,4 @@
-/* style.css */
-
-/* Reset some default spacing */
+/* Global Styles */
 body {
   margin: 0;
   padding: 0;
@@ -9,31 +7,31 @@ body {
   color: #333;
 }
 
-/* Header styles */
 header {
   text-align: center;
-  padding: 2rem;
+  padding: 3rem;
   background-color: #0047ab;
   color: white;
+  animation: header-animation 2s ease-in-out;
+}
+
+header .logo img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
 }
 
 .subtitle {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #e0e0e0;
   margin-top: 0.5rem;
 }
 
-/* Button container */
-.button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  padding: 2rem;
-}
-
-/* Button styles */
-.btn {
+button, .btn {
   background-color: #007BFF;
   color: white;
   padding: 1rem 2rem;
@@ -46,8 +44,44 @@ header {
   transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+button:hover, .btn:hover {
   background-color: #0056b3;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+/* Widget Styles */
+.widget-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.widget {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+}
+
+.widget h3 {
+  font-size: 1.2rem;
+  color: #0047ab;
+  margin-bottom: 0.5rem;
+}
+
+.widget p {
+  font-size: 1rem;
+  color: #666;
 }
 
 /* Footer */
@@ -57,4 +91,16 @@ footer {
   background-color: #f0f0f0;
   margin-top: 3rem;
   color: #666;
+}
+
+/* Animations */
+@keyframes header-animation {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
