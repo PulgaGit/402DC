@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f7fa; /* Light subtle background */
+  background-color: #f5f7fa;
   color: #333;
   margin: 0;
   padding: 0;
@@ -11,7 +11,8 @@ body {
 header {
   text-align: center;
   padding: 2rem 1rem;
-  background-color: #e8eef5;
+  background-color: #0077cc; /* GNFC blue */
+  color: white;
   border-bottom: 1px solid #ccc;
 }
 
@@ -26,7 +27,7 @@ header {
 
 .subtitle {
   font-size: 1.2rem;
-  color: #666;
+  color: #e0e0e0;
 }
 
 .button-container {
@@ -71,6 +72,11 @@ header {
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.widget:hover {
+  transform: scale(1.02);
 }
 
 footer {
