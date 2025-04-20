@@ -1,9 +1,60 @@
+/* style.css */
+
+/* Reset some default spacing */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4faff;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #0047ab;
+  color: white;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-top: 0.5rem;
+}
+
+/* Button container */
 .button-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  margin: 2rem auto;
-  width: 100%;
-  max-width: 400px;
+  padding: 2rem;
+}
+
+/* Button styles */
+.btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 250px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  margin-top: 3rem;
+  color: #666;
 }
