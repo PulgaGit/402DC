@@ -13,6 +13,8 @@ header {
   padding: 2rem 1rem;
   background-color: #0077cc;
   color: #fff;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -85,13 +87,13 @@ footer {
 /* Responsiveness for small screens */
 @media (max-width: 600px) {
   .btn {
-    max-width: 90%;  /* Ensures buttons do not stretch across the full screen */
-    padding: 0.7rem 1rem;  /* Reduced padding for compact look */
+    max-width: 80%;  /* Reduced max-width for better fitting */
+    padding: 0.65rem 1rem;  /* Reduced padding for a more compact look */
     font-size: 0.95rem;
   }
   
   .button-container {
-    padding: 0 1rem;  /* Maintain some padding around buttons */
+    padding: 0 1rem;
     width: 100%;
   }
 
@@ -107,9 +109,9 @@ footer {
 
 @media (max-width: 400px) {
   .btn {
-    max-width: 90%;
+    max-width: 85%;  /* Even further reduction for very small screens */
     font-size: 0.9rem;
-    padding: 0.6rem 1rem;
+    padding: 0.55rem 1rem;  /* Further reduce padding */
   }
 
   .widget-container {
