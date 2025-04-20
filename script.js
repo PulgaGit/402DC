@@ -1,11 +1,9 @@
-// Future scripts can go here if needed
+// Basic console log
 console.log("GNFC EQDB Hub Loaded");
 
-// Adding some interactivity to the widgets if needed
-const widgets = document.querySelectorAll('.widget');
-
-widgets.forEach(widget => {
+// Widget click feedback
+document.querySelectorAll('.widget').forEach(widget => {
   widget.addEventListener('click', () => {
-    alert('You clicked a widget!');
+    alert(`You clicked: ${widget.querySelector('h3').innerText}`);
   });
 });
