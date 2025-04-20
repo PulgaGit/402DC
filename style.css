@@ -109,6 +109,9 @@ footer {
 
   header {
     padding: 2.5rem 1rem;  /* Increased padding for header for more space */
+    width: 100vw;  /* Use full viewport width */
+    margin-left: 0;  /* Remove any left margin */
+    margin-right: 0;  /* Remove any right margin */
   }
 }
 
@@ -129,5 +132,8 @@ footer {
 
   header {
     padding: 3rem 1rem;  /* More padding for header on very small screens */
+    width: 100vw;  /* Use full viewport width */
+    margin-left: 0;  /* Remove any left margin */
+    margin-right: 0;  /* Remove any right margin */
   }
 }
